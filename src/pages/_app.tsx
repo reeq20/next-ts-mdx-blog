@@ -4,6 +4,7 @@ import "../../styles/globals.css";
 import Image from "next/image";
 import CodeBlock from "../components/ui/CodeBlock";
 import Link from "next/link";
+import ContentBlock from "../components/ui/ContentBlock";
 
 // const CodeBlock = dynamic(() => import("../components/ui/CodeBlock"));
 // import dynamic from "next/dynamic";
@@ -20,6 +21,7 @@ const mdComponents = {
   img: Image,
   code: CodeBlock,
   a: Link,
+  div: ContentBlock,
 };
 
 const App = ({ Component, pageProps }) => (

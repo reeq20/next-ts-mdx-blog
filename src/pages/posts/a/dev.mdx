@@ -1,7 +1,13 @@
-import {Head} from "next/document";
-import Layout from "../../components/layouts/PostLayout";
-import CodeBlock from "../../components/ui/CodeBlock";
-import ContentBlock from "../../components/ui/ContentBlock"; import MdxBlock from "../../components/ui/MdxBlock";
+
+---
+title: sample
+---
+
+import Layout from "../../../components/layouts/PostLayout";
+import CodeBlock from "../../../components/ui/CodeBlock";
+import ContentBlock from "../../../components/ui/ContentBlock";
+
+
 
 export const meta = {
     title: "dev",
@@ -45,12 +51,18 @@ echo $test;
 ```
 
 
+<div>
+    block test
+</div>
+
+<div>
+    block test
+</div>
 
 [Qiita](http://qiita.com "Qiita")
 
 export default ({children}) => (
     <Layout meta={meta}>
         {children}
-        <ContentBlock># h1</ContentBlock>
     </Layout>
 );
