@@ -1,42 +1,56 @@
-import { Head } from "next/document";
+import {Head} from "next/document";
 import Layout from "../../components/layouts/PostLayout";
 import CodeBlock from "../../components/ui/CodeBlock";
-import ContentBlock from "../../components/ui/ContentBlock";
+import ContentBlock from "../../components/ui/ContentBlock"; import MdxBlock from "../../components/ui/MdxBlock";
 
 export const meta = {
-  title: "dev",
-  date: "2021-01-03",
-  desc: "これはサンプルテキストです。",
+    title: "dev",
+    date: "2021-01-03",
+    desc: "これはサンプルテキストです。",
 };
 
 mark down text
 これはサンプルテキストです。文字数や行間を確認するため入力しています。
 
-export const test = `
-const children = 'file';
-isTest('test');
-<?php
-echo 'sttt';
-?>
-    `;
+export const test = `const test = 'test'
+console.log(test)
+const func = async({props})=>{
+const r = await asyncFunc(props)
+return r
+}`;
 
-<CodeBlock className={"file.php"}>{test}</CodeBlock>
+
+
 
 mark down text
 
-export const test2 = `
-const children = 'file';
-isTest('test');
+## test
+
+```file.jsx
+const test = 'testCode'
+console.log(test)
+
+const test2 = async()=>{
+    await console.log(test)
+}
+```
+
+## test2
+
+```file.php
 <?php
-echo 'sttt';
+$test = 'test';
+echo $test;
 ?>
-    `;
+```
 
-<CodeBlock className={"file.php"}>{test2}</CodeBlock>
 
-export default ({ children }) => (
-  <Layout meta={meta}>
-    {children}
-    <ContentBlock># h1</ContentBlock>
-  </Layout>
+
+[Qiita](http://qiita.com "Qiita")
+
+export default ({children}) => (
+    <Layout meta={meta}>
+        {children}
+        <ContentBlock># h1</ContentBlock>
+    </Layout>
 );
