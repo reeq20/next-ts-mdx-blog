@@ -1,3 +1,18 @@
+import Layout from "../components/layouts/DefaultLayout";
+import CodeBlock from "../components/ui/CodeBlock";
+
 # :wave: Hello, world!
 
 This is MDX!
+
+export const test = `
+const children = 'file';
+isTest('test');
+<?php
+echo 'sttt';
+?>
+    `;
+
+<CodeBlock children={test} className={"file.php"}></CodeBlock>
+
+export default ({ children }) => <Layout>{children}</Layout>;
