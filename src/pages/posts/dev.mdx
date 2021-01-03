@@ -5,11 +5,12 @@ import ContentBlock from "../../components/ui/ContentBlock";
 
 export const meta = {
   title: "dev",
+  date: "2021-01-03",
+  desc: "これはサンプルテキストです。",
 };
 
-# dev
-
 mark down text
+これはサンプルテキストです。文字数や行間を確認するため入力しています。
 
 export const test = `
 const children = 'file';
@@ -36,6 +37,6 @@ echo 'sttt';
 export default ({ children }) => (
   <Layout meta={meta}>
     {children}
-    <ContentBlock>test</ContentBlock>
+    <ContentBlock># h1</ContentBlock>
   </Layout>
 );

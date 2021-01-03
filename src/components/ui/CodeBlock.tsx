@@ -16,10 +16,7 @@ export default ({ children, className }) => {
           >
             {language}
           </span>
-          <pre
-            className={`${className} px-6 py-4 rounded-sm`}
-            style={{ ...style }}
-          >
+          <pre className={`${className} p-6 rounded-sm`} style={{ ...style }}>
             {tokens.map((line, i) => (
               <div key={i} {...getLineProps({ line, key: i })}>
                 {line.map((token, key) => (

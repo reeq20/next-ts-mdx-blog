@@ -1,4 +1,7 @@
-const ContentBlock = ({ children }) => {
+import React from "react";
+import { MDXProvider } from "@mdx-js/react";
+
+const ContentBlock = ({ Component, children }) => {
   return (
     <>
       <div

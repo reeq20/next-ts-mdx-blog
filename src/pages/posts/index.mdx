@@ -1,1 +1,40 @@
-# post/index
+import Layout from "../../components/layouts/PostLayout";
+import CodeBlock from "../../components/ui/CodeBlock";
+import ContentBlock from "../../components/ui/ContentBlock";
+
+export const meta = {
+  title: "postIndex",
+};
+
+# dev
+
+mark down text
+
+export const test = `
+const children = 'file';
+isTest('test');
+<?php
+echo 'sttt';
+?>
+    `;
+
+<CodeBlock className={"file.php"}>{test}</CodeBlock>
+
+mark down text
+
+export const test2 = `
+const children = 'file';
+isTest('test');
+<?php
+echo 'sttt';
+?>
+    `;
+
+<CodeBlock className={"file.php"}>{test2}</CodeBlock>
+
+export default ({ children }) => (
+  <Layout meta={meta}>
+    {children}
+    <ContentBlock>test</ContentBlock>
+  </Layout>
+);
