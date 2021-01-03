@@ -1,9 +1,10 @@
 import React from "react";
 import { MDXProvider } from "@mdx-js/react";
+import "tailwindcss/tailwind.css";
 
 const mdComponents = {
-  h1: (props) => <h1 style={{ color: "black" }} {...props} />,
-  h2: (props) => <h2 style={{ color: "black" }} {...props} />,
+  h1: (props) => <h1 className={"p-8"} {...props} />,
+  h2: (props) => <h2 className={"p-8"} {...props} />,
 };
 
 export default ({ Component, pageProps }) => (

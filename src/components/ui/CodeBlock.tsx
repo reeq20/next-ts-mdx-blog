@@ -1,5 +1,6 @@
 import React from "react";
 import Highlight, { defaultProps } from "prism-react-renderer";
+
 export default ({ children, className }) => {
   const language = className.replace(/language-/, "");
   let fileExtension = language.split(".");
