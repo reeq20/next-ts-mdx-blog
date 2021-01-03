@@ -11,7 +11,7 @@ interface HeadProps {
 }
 
 const Layout = ({
-  meta = { title: "HOME", description: "description" },
+  meta = { title: "Post", description: "description" },
   children,
 }: HeadProps) => {
   return (
@@ -20,7 +20,15 @@ const Layout = ({
         <title>{meta.title}</title>
       </Head>
       <Header />
-      {children}
+      <main>
+        <div
+          className={
+            "container max-w-7xl mx-auto my-8 border-2 rounded-lg border-gray-200 border-opacity-50 px-8 py-12 bg-white"
+          }
+        >
+          {children}
+        </div>
+      </main>
       <Footer />
     </>
   );

@@ -1,13 +1,41 @@
-# posts/dev
+import { Head } from "next/document";
+import Layout from "../../components/layouts/PostLayout";
+import CodeBlock from "../../components/ui/CodeBlock";
+import ContentBlock from "../../components/ui/ContentBlock";
 
-## h2
-### h3
-#### h4
-##### h5
-###### h6
+export const meta = {
+  title: "dev",
+};
 
-```js
-export default{
-    console.log('test')
-}
-```
+# dev
+
+mark down text
+
+export const test = `
+const children = 'file';
+isTest('test');
+<?php
+echo 'sttt';
+?>
+    `;
+
+<CodeBlock className={"file.php"}>{test}</CodeBlock>
+
+mark down text
+
+export const test2 = `
+const children = 'file';
+isTest('test');
+<?php
+echo 'sttt';
+?>
+    `;
+
+<CodeBlock className={"file.php"}>{test2}</CodeBlock>
+
+export default ({ children }) => (
+  <Layout meta={meta}>
+    {children}
+    <ContentBlock>test</ContentBlock>
+  </Layout>
+);

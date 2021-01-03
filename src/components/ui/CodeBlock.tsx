@@ -11,12 +11,15 @@ export default ({ children, className }) => {
         <div className={"relative"}>
           <span
             className={
-              "absolute inset-0 inline-block z-0 w-32 h-16 text-gray-50"
+              "absolute -inset-0 max-w-xs inline z-0 max-w-full max-h-6 text-gray-50"
             }
           >
             {language}
           </span>
-          <pre className={`${className} px-6 py-4`} style={{ ...style }}>
+          <pre
+            className={`${className} px-6 py-4 rounded-sm`}
+            style={{ ...style }}
+          >
             {tokens.map((line, i) => (
               <div key={i} {...getLineProps({ line, key: i })}>
                 {line.map((token, key) => (

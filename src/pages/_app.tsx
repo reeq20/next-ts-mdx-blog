@@ -1,6 +1,7 @@
 import React from "react";
 import { MDXProvider } from "@mdx-js/react";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
+import "../../styles/globals.css";
 
 const mdComponents = {
   h1: (props) => <h1 className={"p-8"} {...props} />,
