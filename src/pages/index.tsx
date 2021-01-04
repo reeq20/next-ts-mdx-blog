@@ -1,6 +1,5 @@
 import Layout from "../components/layouts/DefaultLayout";
-import Link from "next/link";
-import { GetStaticProps, NextPage } from "next";
+import { NextPage } from "next";
 
 interface Props {
   testData: string;
