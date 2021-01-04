@@ -21,7 +21,7 @@ const Layout = ({ meta, children }: HeadProps) => {
       <main>
         <div
           className={
-            "container max-w-7xl mx-auto my-8 border-2 rounded-lg border-gray-200 border-opacity-50 px-8 py-12 bg-white"
+            "container max-w-7xl mx-auto my-8 border border-solid border-gray-100 rounded-lg  px-8 py-12 bg-white"
           }
         >
           <h1 className={"py-4 font-sans text-4xl font-bold text-gray-800"}>

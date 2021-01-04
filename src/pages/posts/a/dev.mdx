@@ -1,0 +1,68 @@
+
+---
+title: sample
+---
+
+import Layout from "../../../components/layouts/PostLayout";
+import CodeBlock from "../../../components/ui/CodeBlock";
+import ContentBlock from "../../../components/ui/ContentBlock";
+
+
+
+export const meta = {
+    title: "dev",
+    date: "2021-01-03",
+    desc: "これはサンプルテキストです。",
+};
+
+mark down text
+これはサンプルテキストです。文字数や行間を確認するため入力しています。
+
+export const test = `const test = 'test'
+console.log(test)
+const func = async({props})=>{
+const r = await asyncFunc(props)
+return r
+}`;
+
+
+
+
+mark down text
+
+## test
+
+```file.jsx
+const test = 'testCode'
+console.log(test)
+
+const test2 = async()=>{
+    await console.log(test)
+}
+```
+
+## test2
+
+```file.php
+<?php
+$test = 'test';
+echo $test;
+?>
+```
+
+
+<div>
+    block test
+</div>
+
+<div>
+    block test
+</div>
+
+[Qiita](http://qiita.com "Qiita")
+
+export default ({children}) => (
+    <Layout meta={meta}>
+        {children}
+    </Layout>
+);
