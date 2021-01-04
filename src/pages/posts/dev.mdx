@@ -1,29 +1,27 @@
-import { Head } from "next/document";
+import {Head} from "next/document";
 import Layout from "../../components/layouts/PostLayout";
 import CodeBlock from "../../components/ui/CodeBlock";
 import ContentBlock from "../../components/ui/ContentBlock";
 
 export const meta = {
-  title: "dev",
-  date: "2021-01-03",
-  desc: "これはサンプルテキストです。",
+    title: "dev",
+    date: "2021-01-03",
+    desc: "これはサンプルテキストです。",
 };
 
 mark down text
 これはサンプルテキストです。文字数や行間を確認するため入力しています。
 
-export const test = `
-const children = 'file';
-isTest('test');
-<?php
-echo 'sttt';
-?>
-    `;
 
-
-```test.js
+```test.jsx
 const test = 'abc';
 console.log('test');
+
+const t = async()=>{
+const r = await method('a');
+return r;
+}
+
 ```
 
 
@@ -31,24 +29,22 @@ console.log('test');
     test
 </div>
 
+<div>
+    test
+</div>
 
-<CodeBlock className={"file.php"}>{test}</CodeBlock>
+<div>
+    test
+</div>
 
-mark down text
+# h1
 
-export const test2 = `
-const children = 'file';
-isTest('test');
-<?php
-echo 'sttt';
-?>
-    `;
+ここにテキスト
 
-<CodeBlock className={"file.php"}>{test2}</CodeBlock>
+## h2
 
-export default ({ children }) => (
-  <Layout meta={meta}>
-    {children}
-    <ContentBlock># h1</ContentBlock>
-  </Layout>
+export default ({children}) => (
+    <Layout meta={meta}>
+        {children}
+    </Layout>
 );

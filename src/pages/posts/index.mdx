@@ -2,8 +2,12 @@ import Layout from "../../components/layouts/PostLayout";
 import CodeBlock from "../../components/ui/CodeBlock";
 import ContentBlock from "../../components/ui/ContentBlock";
 
+export const r = {
+    t: "sample"
+}
+
 export const meta = {
-  title: "postIndex",
+    title: "postIndex",
 };
 
 # dev
@@ -34,9 +38,9 @@ echo 'sttt';
 
 <CodeBlock className={"file.php"}>{test2}</CodeBlock>
 
-export default ({ children }) => (
-  <Layout meta={meta}>
-    {children}
-    <ContentBlock>test</ContentBlock>
-  </Layout>
+export default ({children}) => (
+    <Layout meta={meta}>
+        {children}
+        <ContentBlock>test</ContentBlock>
+    </Layout>
 );
