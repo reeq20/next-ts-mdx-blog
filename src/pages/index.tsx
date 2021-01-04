@@ -1,6 +1,5 @@
 import Layout from "../components/layouts/DefaultLayout";
 import { NextPage } from "next";
-import "../../styles/globals.css";
 
 interface Props {
   testData: string;
