@@ -34,8 +34,8 @@ const Home: NextPage<Props> = () => {
                         strokeWidth="2"
                         className="w-8 h-8"
                         viewBox="0 0 24 24"
-                        width={24}
-                        height={24}
+                        width="24"
+                        height="24"
                       >
                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                       </svg>
@@ -58,8 +58,8 @@ const Home: NextPage<Props> = () => {
                           strokeWidth="2"
                           className="w-4 h-4 ml-2"
                           viewBox="0 0 24 24"
-                          width={16}
-                          height={16}
+                          width="16"
+                          height="16"
                         >
                           <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
@@ -78,8 +78,8 @@ const Home: NextPage<Props> = () => {
                         strokeWidth="2"
                         className="w-8 h-8"
                         viewBox="0 0 24 24"
-                        width={24}
-                        height={24}
+                        width="24"
+                        height="24"
                       >
                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                       </svg>
@@ -102,8 +102,8 @@ const Home: NextPage<Props> = () => {
                           strokeWidth="2"
                           className="w-4 h-4 ml-2"
                           viewBox="0 0 24 24"
-                          width={16}
-                          height={16}
+                          width="16"
+                          height="16"
                         >
                           <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
