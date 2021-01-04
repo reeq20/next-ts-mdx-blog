@@ -1,46 +1,47 @@
 import Layout from "../../components/layouts/PostLayout";
-import CodeBlock from "../../components/ui/CodeBlock";
-import ContentBlock from "../../components/ui/ContentBlock";
-
-export const r = {
-    t: "sample"
-}
 
 export const meta = {
-    title: "postIndex",
+    title: "dev",
+    date: "2021-01-03",
+    desc: "これはサンプルテキストです。",
 };
 
-# dev
-
 mark down text
-
-export const test = `
-const children = 'file';
-isTest('test');
-<?php
-echo 'sttt';
-?>
-    `;
-
-<CodeBlock className={"file.php"}>{test}</CodeBlock>
-
-mark down text
-
-export const test2 = `
-const children = 'file';
-isTest('test');
-<?php
-echo 'sttt';
-?>
-    `;
+これはサンプルテキストです。文字数や行間を確認するため入力しています。
 
 
+```test.jsx
+const test = 'abc';
+console.log('test');
 
-<CodeBlock className={"file.php"}>{test2}</CodeBlock>
+const t = async()=>{
+const r = await method('a');
+return r;
+}
+
+```
+
+
+<div>
+    test
+</div>
+
+<div>
+    test
+</div>
+
+<div>
+    test
+</div>
+
+# h1
+
+ここにテキスト
+
+## h2
 
 export default ({children}) => (
     <Layout meta={meta}>
         {children}
-        <ContentBlock>test</ContentBlock>
     </Layout>
 );
